@@ -9,8 +9,8 @@
   <meta name="description" content="欢迎访问圣淘沙娱乐公司官方网站。了解我们的公司环境、服务信息及官方联系渠道，为您提供专业、便捷的咨询体验。">
   <meta name="keywords" content="圣淘沙娱乐公司, 圣淘沙官网, 圣淘沙客户服务, 公司介绍">
   
-  <!-- 社交分享标签 (以后发链接会有缩略图) -->
-  <meta property="og:title" content="圣淘沙娱乐公司 - 专业服务与客户沟通">
+  <!-- 社交分享标签 (已修复之前的错误代码) -->
+  <meta property="og:title" content="圣淘沙娱乐公司 - 专业服务 · 用心沟通">
   <meta property="og:description" content="了解我们的公司环境、服务信息及官方联系渠道。">
   <meta property="og:image" content="images/company-building.jpg">
 
@@ -27,16 +27,29 @@
   }
   </script>
 
-  <!-- 样式表 -->
+  <!-- 外部样式表 -->
   <link rel="stylesheet" href="style.css">
+  
+  <!-- 内部样式：专门控制副标题的大小和对齐 -->
+  <style>
+    .hero-subtitle-text {
+      font-size: 20px;       /* 字号调小 */
+      font-weight: 500;      /* 字体调细 */
+      color: #123b78;        /* 深蓝色调 */
+      margin-top: -10px;     /* 拉近与主标题的距离 */
+      margin-bottom: 20px;   /* 和下方段落的距离 */
+      letter-spacing: 2px;   /* 字间距拉开，显得高级 */
+      display: block;
+    }
+  </style>
 </head>
 <body>
   <header class="site-header">
     <div class="wrap nav">
       <a class="brand" href="index.html" aria-label="圣淘沙娱乐公司首页">
-      <img src="images/logo.png" alt="公司Logo" class="brand-logo">
-      <span>圣淘沙娱乐公司<small>官方网站 · 客户服务中心</small></span>
-    </a>
+        <img src="images/logo.png" alt="公司Logo" class="brand-logo">
+        <span>圣淘沙娱乐公司<small>官方网站 · 客户服务中心</small></span>
+      </a>
       <button class="menu-toggle" type="button" aria-label="打开导航菜单" aria-expanded="false">☰</button>
       <nav class="nav-links" aria-label="主导航">
         <a href="index.html" class="active">首页</a>
@@ -52,7 +65,11 @@
     <div class="wrap hero-grid">
       <div>
         <span class="eyebrow">● 官方网站 · 客户服务中心</span>
-        <h1>圣淘沙娱乐公司<br>专业服务 · 用心沟通</h1>
+        
+        <!-- 完美拆分的标题结构 -->
+        <h1>圣淘沙娱乐公司</h1>
+        <div class="hero-subtitle-text">专业服务 · 用心沟通</div>
+        
         <p class="lead">欢迎访问圣淘沙娱乐公司官方网站。您可以通过本网站了解公司环境、服务信息及官方联系渠道。</p>
         <div class="actions">
           <a class="btn btn-primary" href="about.html">了解公司介绍</a>
@@ -62,11 +79,11 @@
       <div class="hero-media">
         <div class="photo-frame" data-carousel data-interval="4000" aria-label="公司图片轮播">
           <div class="slide" style="opacity:1">
-          <img data-local-image src="images/company-building.jpg" alt="圣淘沙娱乐公司大楼外观">
+            <img data-local-image src="images/company-building.jpg" alt="圣淘沙娱乐公司大楼外观">
           </div>
           <div class="slide" style="opacity:0">
             <img data-local-image src="images/company-city.jpg" alt="圣淘沙娱乐公司所在城市全景">
-           </div>
+          </div>
           <div class="slide" style="opacity:0">
             <img data-local-image src="images/customer-service.jpg" alt="圣淘沙娱乐公司客户服务场景">
           </div>
@@ -92,13 +109,13 @@
     <div class="wrap two-col">
       <div class="panel">
         <h2>常见问题</h2><p class="panel-intro">快速查看网站相关信息</p>
-        <div class="faq-item open"><button class="faq-question" aria-expanded="true">如何了解公司信息？ <span class="faq-mark">−</span></button><div class="faq-answer">点击导航中的“公司介绍”，查看公司概况、环境展示与服务理念。</div></div>
-        <div class="faq-item"><button class="faq-question" aria-expanded="false">如何联系客服？ <span class="faq-mark">+</span></button><div class="faq-answer">请打开“联系客服”页面，使用网站管理员填写并核实的官方联系方式。</div></div>
-        <div class="faq-item"><button class="faq-question" aria-expanded="false">营业时间是什么时候？ <span class="faq-mark">+</span></button><div class="faq-answer">请通过联系客服页面提供的官方电话或在线渠道咨询最新营业时间。</div></div>
+        <div class="faq-item open"><button class="faq-question" aria-expanded="true">如何了解公司信息？ <span class="faq-mark">−</span></button><div class="faq-answer">点击导航中的「公司介绍」，查看公司概况、环境展示与服务理念。</div></div>
+        <div class="faq-item"><button class="faq-question" aria-expanded="false">如何联系客服？ <span class="faq-mark">+</span></button><div class="faq-answer">请打开「联系客服」页面，通过网站公布的官方联系方式进行咨询，我们的线上客服全天在线，为您提供及时的咨询服务。</div></div>
+        <div class="faq-item"><button class="faq-question" aria-expanded="false">营业时间是什么时候？ <span class="faq-mark">+</span></button><div class="faq-answer">我们实行24小时营业制度，线上客服全年全天候在线，您可以随时通过官方网站联系在线客服，咨询相关业务及服务信息。</div></div>
       </div>
       <div class="card photo-card">
         <img data-local-image src="images/customer-service.jpg" alt="圣淘沙娱乐公司服务展示图片">
-       </div>
+      </div>
     </div>
   </section>
 </main>
